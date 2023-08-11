@@ -48,3 +48,21 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 950px) {
+    .underContent .listItem .card {
+        width: 348px;
+    }
+
+    .underContent .listItem {
+        width: 390px;
+    }
+
+    .underContent {
+        padding-left: 130px;
+    }
+
+    .underConten {
+        width: 390px;
+    }
+}
