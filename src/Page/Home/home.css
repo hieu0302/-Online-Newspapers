@@ -1,0 +1,121 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 150px;
+
+    /* padding: 20px 270px; */
+}
+
+.main_right .card {
+    border-bottom: solid 1px rgba(216, 216, 216, 0.842);
+    margin: 10px;
+    width: 330px;
+    height: 100px;
+
+}
+
+.main_right .card p {
+    font-size: small;
+    padding-top: 10px;
+}
+
+
+.main_right .card .linkCard {
+    display: flex;
+    gap: 10px;
+    font-size: small;
+
+}
+
+.main_right .card .linkCard .title {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.main_right .card .linkCard .title:hover {
+    color: #2FA1B3;
+}
+
+.main_right .card .linkCard img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    object-fit: cover;
+    border: solid 1px #2FA1B3;
+
+}
+
+.main_right .card .timeSrc {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.main_left .main_left_2 .listItem {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    /* border-bottom: 2px solid rgba(216, 216, 216, 0.842); */
+}
+
+.main_left .main_left_2 .listItem .card {
+
+    width: 300px;
+}
+
+.main_left .main_left_2 .listItem .card img {
+    width: 200px;
+    object-fit: cover;
+    height: 130px;
+    border: solid 1px #2FA1B3;
+    border-radius: 7px;
+}
+
+.main_left .main_left_2 .listItem .card .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: small;
+}
+
+.main_left .main_left_2 .listItem .card .title:hover {
+    color: #2FA1B3;
+}
+
+.main_left .main_left_2 .listItem .card .timeSrc {
+
+    display: flex;
+    flex-direction: column-reverse;
+    gap: -10px;
+
+}
+
+
+.src:hover {
+    color: #b32f3a;
+}
+
+@media only screen and (max-width: 950px) {
+    .main_right {
+        display: none;
+    }
+
+    .main_left_2 .listItem {
+        display: flex;
+        flex-direction: column;
+        padding-left: 130px;
+
+    }
+
+    .undercontent {
+        padding-left: 150px;
+    }
+}

@@ -1,0 +1,15 @@
+.inforUser {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inforUser .photo img {
+    border-radius: 50%;
+    width: 30px;
+
+}
+
+.inforUser .logout {
+    width: 100px;
+}

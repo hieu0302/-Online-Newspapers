@@ -1,0 +1,38 @@
+ .carousel h1 {
+     color: white;
+     position: absolute;
+     bottom: 30px;
+     width: 580px;
+     text-shadow: 1px 1px 2px rgb(3, 3, 3), 0 0 1em rgb(3, 3, 3), 0 0 0.2em rgb(18, 18, 19);
+     /* text-align: center; */
+     padding-left: 20px;
+     font-size: 30px;
+
+ }
+
+ .carousel h1:hover {
+     color: #2FA1B3;
+ }
+
+ .carousel img {
+     border-radius: 7px;
+     box-shadow: inset rgba(0, 0, 0, 0.35) -100px -200px 100px -208px;
+     border-bottom: 15px solid #acacacfd;
+     width: 625px;
+     height: 400px;
+     object-fit: cover;
+
+
+
+ }
+
+
+
+
+
+ @media (max-width: 600px) {
+     .carousel {
+         display: none;
+     }
+
+ }

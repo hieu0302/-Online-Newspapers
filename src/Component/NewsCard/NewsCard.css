@@ -1,0 +1,18 @@
+.title:hover {
+    color: #2FA1B3;
+
+}
+
+.card .linkCard img {
+    transition: transform 0.7s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(90%);
+    border: 1px rgb(202, 202, 202) solid;
+}
+
+
+.card .linkCard img:hover {
+    filter: brightness(100%);
+    transform: scale(1.05);
+
+}

@@ -1,0 +1,166 @@
+.header .logo_search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 20px;
+}
+
+.header .logo_search .user_infor button {
+    border: solid 1px;
+    background-color: white;
+
+}
+
+.header .logo_search .user_infor button:hover {
+    cursor: pointer;
+}
+
+.header .nav_bar {
+    background-color: #2FA1B3;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.header .nav_bar a {
+    display: flex;
+    padding: 0 12px;
+    border-left: 1px solid hsla(0, 0%, 100%, .2);
+    border-right: 1px solid hsla(0, 0%, 100%, .2);
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    height: 40px;
+    font-weight: 500;
+
+    align-items: center;
+}
+
+.header .nav_bar a:hover {
+    background-color: #2B94A5;
+
+}
+
+.active {
+    background-color: #257b88;
+}
+
+/* ................ */
+
+.headerMenu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 20px hsla(207, 24%, 35%, 0.1);
+    background-color: #2FA1B3;
+    z-index: 1;
+    height: 40px;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+.menu a {
+    display: block;
+    padding: 7px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    color: #fff;
+}
+
+.menu:hover a {
+    opacity: 0.4;
+}
+
+.menu a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.menu-icon {
+    display: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked~.menu {
+    transform: scale(1, 1);
+}
+
+@media only screen and (max-width: 950px) {
+    .header .logo_search .logo {
+        display: none;
+    }
+
+    .header .logo_search Input {
+        width: 300px;
+    }
+
+    .header .logo_search {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        background-color: #2FA1B3;
+        align-items: start;
+        position: absolute;
+        top: 120px;
+        left: 0px;
+        width: 110%;
+        z-index: 1;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+    }
+
+    .headerMenu {
+        width: 110%;
+    }
+
+    .menu a {
+        margin-left: 12px;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+
+}

@@ -1,0 +1,140 @@
+.sourceContent {
+    /* background-image: url('../../Component/image/sports1.jpg'); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+
+
+}
+
+.wrapper {
+    margin: 0 0 20px 0;
+    width: 500px;
+    height: 500px;
+
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;
+    align-content: end;
+}
+
+.box {
+    background-color: white;
+    color: black;
+    /* border-radius: 5px; */
+    border: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+
+}
+
+/* .item1 {
+    grid-column: 1 / 2;
+} */
+
+.item1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+/* .item3 {
+    grid-column: 3 / 5;
+} */
+.item1 .listItem .card .zoomImage {
+    width: 420px;
+    height: 260px;
+    overflow: hidden;
+
+}
+
+.item1 .listItem .card img {
+    object-fit: cover;
+    /* border-radius: 5px; */
+    border: none;
+    width: 420px;
+    height: 260px;
+
+}
+
+.item1 h3 {
+
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+
+}
+
+.item1 .timeSrc {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.item2 .listItem .card img {
+    width: 199px;
+    object-fit: cover;
+    border: none;
+}
+
+.item2 .listItem .card .zoomImage {
+    width: 199px;
+    overflow: hidden;
+    height: 110px;
+}
+
+.item2 h3 {
+    font-size: smaller;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.item2 .timeSrc {
+    padding: 0 5px;
+
+
+}
+
+
+.contentUnder {
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+.contentUnder .listItem .card {
+    margin-bottom: 30px;
+    border-bottom: solid gray 1px;
+}
+
+.contentUnder .listItem .card .linkCard {
+    display: flex;
+    gap: 20px;
+}
+
+
+.contentUnder .listItem .card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.contentUnder .listItem .card .timeSrc {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
